@@ -474,3 +474,105 @@ footer .detalles {
     margin-bottom: 15px;
     font-weight: 600;
 }
+
+@media (min-width: 1200px) and (max-width: 1300px) {
+        
+    header .menu ul {
+        margin-right: 100px;
+    }
+    
+        
+    .hero .text-hero {
+        padding-left: 50px;
+    }
+    
+  }
+
+  @media (min-width: 1100px) and (max-width: 1200px) {
+        
+    header .menu ul {
+        margin-right: 100px;
+    }
+    
+        
+    .hero .text-hero {
+        padding-left: 50px;
+    }
+    
+    .hero .text-hero p {
+        width: 400px;
+        padding: 25px 0 45px 35px;
+    }
+    
+    .hero .img-hero img {
+        padding-top: 50px;
+        height: 500px;
+    }
+  }
+
+  @media (min-width: 900px) and (max-width: 1100px) {
+        
+    header .menu ul {
+        margin-right: 0px;
+    }
+    
+    header .menu ul li {
+        margin-right: 20px;
+    }
+        
+    .hero .text-hero {
+        padding-top: 50px;
+        padding-left: 0px;
+    }
+    
+    .hero .text-hero p {
+        width: 350px;
+        padding: 25px 0 45px 35px;
+    }
+
+    .hero .text-hero img {
+        height: 80px;
+        padding-left: 20px;
+    }
+    
+    .hero .img-hero img {
+        padding-top: 20px;
+        height: 400px;
+    }
+  }
+
+  @media (min-width: 800px) and (max-width: 900px) {
+
+    header {
+        grid-template-columns: 200px auto;
+    }
+        
+    header .menu ul {
+        margin-right: 0px;
+    }
+    
+    header .menu ul li {
+        margin-right: 15px;
+    }
+        
+    .hero .text-hero {
+        padding-top: 50px;
+        padding-left: 0px;
+    }
+    
+    .hero .text-hero p {
+        width: 300px;
+        padding: 25px 0 45px 35px;
+        font-size: 1em;
+    }
+
+    .hero .text-hero img {
+        height: 70px;
+        padding-left: 20px;
+    }
+    
+    .hero .img-hero img {
+        padding-top: 20px;
+        height: 350px;
+    }
+  }
