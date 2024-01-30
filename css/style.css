@@ -5,6 +5,10 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+h1, p {
+ margin: 0;
+}
+
 /* stilos del header  */
 header {
     padding: 0px 50px;
@@ -114,39 +118,60 @@ header .menu ul li a {
 
 .planes {
     padding: 0px 50px;
-    padding-top: 50px;
     background: linear-gradient(70deg, #2B4D89 50%, #7397CF );
 }
 
 .planes h1 {
     text-align: center;
-    color: #fff;
+    color: #ffffff;
     font-size: 2em;
+    padding-top: 20px;
 }
 
 .planes .planes_section {
     display: grid;
-    grid-template-columns: repeat(3, 250px);
-    grid-template-rows: 500px;
+    grid-template-columns: 250px 280px 250px;
+    grid-template-rows: 600px;
     grid-column-gap: 40px;
     justify-content: center;
-    padding: 50px 0px;
+    padding-top: 30px;
+    padding-bottom: 20px;
 }
 .planes .planes_section .planes_box {
-    border: 5px solid #2B4D89;
+    border: 5px solid #7397CF;
     border-radius: 10px;
     background: linear-gradient(#e8f1ff, #ffffff, #e8f1ff );
     box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.25);
     display: grid;
-    grid-template-rows: 100px 100px 300px;
+    grid-template-rows: 100px 100px 250px 100px;
+    height: 550px;
+    margin-top: 25px;
+}
+
+.planes .planes_section .box_principal {
+    border: 5px solid #7397CF;
+    border-radius: 10px;
+    background: linear-gradient(#e8f1ff, #ffffff, #e8f1ff );
+    box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.25);
+    display: grid;
+    grid-template-rows: 100px 100px 250px 100px;
 }
 
 .planes_box .titulo {
     height: 100px;
 }
 
+.box_principal .titulo {
+    height: 100px;
+}
+
 .planes_box .titulo h1 {
-    padding-top: 5px;
+    padding-top: 30px;
+    color: #2B4D89;
+}
+
+.box_principal .titulo h1 {
+    padding-top: 30px;
     color: #2B4D89;
 }
 
@@ -156,13 +181,87 @@ header .menu ul li a {
     box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.25);
 }
 
-.planes_box .precio h1 {
-    margin-top: 20px;
-    margin-bottom: 1px;
+.box_principal .precio {
+    height: 100px;
+    background: linear-gradient(70deg, #2B4D89 50%, #7397CF );
+    box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.25);
 }
 
 .planes_box .precio p {
     text-align: center;
     color: #fff;
-    margin-top: 1px;
 }
+
+.box_principal .precio p {
+    text-align: center;
+    color: #fff;
+}
+
+.planes_box .caracteristicas {
+    display: grid;
+    grid-template-rows: repeat(6, 50px);
+    grid-column-gap: 40px;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+.box_principal .caracteristicas {
+    display: grid;
+    grid-template-rows: repeat(6, 55px);
+    grid-column-gap: 40px;
+    justify-content: center;
+    padding-top: 10px;
+
+}
+
+.planes_box .caracteristicas p{
+    text-align: center;
+    border-bottom: 2px solid #2b4d8970;
+    width: 200px;
+    margin: 10px;
+    color: #2b4d89cd;
+}
+
+.box_principal .caracteristicas p{
+    text-align: center;
+    border-bottom: 2px solid #2b4d8970;
+    width: 200px;
+    margin: 10px;
+    color: #2b4d89cd;
+}
+
+.planes_box .button {
+    text-align: center;
+    padding-top: 25px;
+}
+
+.box_principal .button {
+    text-align: center;
+    padding-top: 55px;
+}
+
+.planes_box .button a{
+    display: inline-block;
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+    background: linear-gradient(70deg, #2B4D89 50%, #7397CF );
+    width: 150px;
+    height: 30px;
+    border-radius: 20px;
+    padding-top: 10px;
+    box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.25);
+}
+.box_principal .button a{
+    display: inline-block;
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+    background: linear-gradient(70deg, #2B4D89 50%, #7397CF );
+    width: 150px;
+    height: 30px;
+    border-radius: 20px;
+    padding-top: 10px;
+    box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.25);
+}
+
