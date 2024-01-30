@@ -32,7 +32,7 @@ header .menu {
 
 header .menu ul {
     float: right;
-    list-style-type:none;
+    list-style-type: none;
     position: relative;
     margin-right: 165px;
 }
@@ -284,17 +284,15 @@ header .menu ul li a {
 .nosotros .nosotros_text {
     color: #2B4D89;
     padding-top: 10px;
-    padding-left: 75px;
 }
 
 .nosotros .nosotros_text img {
     height: 100px;
-    padding-left: 50px;
 }
 
 .nosotros .nosotros_text p {
     width: 500px;
-    padding: 25px 0 45px 35px;
+    padding: 25px 0 45px 100px;
     line-height: 1.5;
     font-size: 1.2em;
 }
@@ -307,4 +305,172 @@ header .menu ul li a {
     padding-top: 25px;
     height: 400px;
     border-radius: 125px 0;
+}
+
+.contactenos {
+    padding: 0px 50px 50px;
+    text-align: center; 
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background: linear-gradient(70deg, #2B4D89 50%, #7397CF );
+}
+
+.contactenos .contac_text {
+    color: #ffffff;
+    padding-top: 30px;
+}
+
+.contactenos .contac_text h1 {
+    font-size: 2em;
+    padding-top: 20px;
+}
+
+.contactenos .contac_text p {
+    width: 500px;
+    padding: 25px 0 45px 100px;
+    line-height: 1.5;
+    font-size: 1.2em;
+}
+
+.contactenos .contac_form {
+    color: #ffffff;
+    padding-top: 30px;
+}
+
+.contactenos .contac_form form {
+    display: grid;
+    grid-template-rows: 40px 40px 110px 60px;
+    grid-row-gap: 15px;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+.contac_form form .box_form {
+    width: 500px;
+}
+
+form .box_form #name {
+    width: 400px;
+    height: 40px;
+    font-size: 1.1em;
+    border-radius: 10px;
+    border: none;
+    color: #2B4D89;
+    background: linear-gradient(#e8f1ff, #ffffff, #e8f1ff );
+    box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.25);
+    padding-left: 10px;
+}
+
+form .box_form #email {
+    width: 400px;
+    height: 40px;
+    font-size: 1.1em;
+    border-radius: 10px;
+    border: none;
+    color: #2B4D89;
+    background: linear-gradient(#e8f1ff, #ffffff, #e8f1ff );
+    box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.25);
+    padding-left: 10px;
+}
+
+form .box_form #mensaje {
+    width: 400px;
+    height: 100px;
+    font-size: 1.1em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    border-radius: 10px;
+    border: none;
+    color: #2B4D89;
+    background: linear-gradient(#e8f1ff, #ffffff, #e8f1ff );
+    box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.25);
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+form .box_form button {
+    width: 200px;
+    height: 40px;
+    font-size: 1.1em;
+    background: linear-gradient(#e8f1ff, #ffffff, #e8f1ff );
+    border-radius: 10px;
+    border: none;
+    color: #2B4D89;
+    box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.25);
+    margin-top: 15px;
+}
+
+footer {
+    padding: 0 50px;
+}
+
+footer .copy {
+    color: #2B4D89;
+    text-align: center;
+}
+
+footer .dev {
+    padding: 15px;
+    font-size: 0.9em;
+    text-align: center;
+    color: #2B4D89;
+}
+
+footer .dev a {
+    text-decoration: none;
+    color: #2B4D89;
+}
+
+footer .detalles {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-column-gap: 40px;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+
+.detalles .det_logo {
+    color: #2B4D89;
+    width: 400px;
+}
+
+.detalles .det_logo img {
+    height: 80px;
+}
+
+.detalles .det_logo p {
+    width: 400px;
+    line-height: 1.5;
+    font-size: 1.2em;
+}
+
+.detalles .det_menu {
+    color: #2B4D89;
+    width: 300px;
+}
+
+.detalles .det_menu ul {
+    list-style-type:none;
+}
+
+.detalles .det_menu ul li{
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.detalles .det_menu ul li a{
+    text-decoration: none;
+    color: #2B4D89;
+}
+
+.detalles .det_contac {
+    color: #2B4D89;
+    padding-top: 15px;
+    width: 400px;
+}
+
+.detalles .det_contac p{
+    margin-bottom: 15px;
+    font-weight: 600;
 }
