@@ -2,6 +2,7 @@
 body {
     margin: 0px;
     padding: 0px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 /* stilos del header  */
@@ -37,7 +38,6 @@ header .menu ul li {
     position:relative;
     margin-right: 25px;
     padding-top: 15px;
-    font-family: 'Montserrat', sans-serif;
     font-size: 1.1em;
     font-weight: 500;
 }
@@ -110,4 +110,59 @@ header .menu ul li a {
 .odin .img-odin img {
     padding-top: 25px;
     height: 600px;
+}
+
+.planes {
+    padding: 0px 50px;
+    padding-top: 50px;
+    background: linear-gradient(70deg, #2B4D89 50%, #7397CF );
+}
+
+.planes h1 {
+    text-align: center;
+    color: #fff;
+    font-size: 2em;
+}
+
+.planes .planes_section {
+    display: grid;
+    grid-template-columns: repeat(3, 250px);
+    grid-template-rows: 500px;
+    grid-column-gap: 40px;
+    justify-content: center;
+    padding: 50px 0px;
+}
+.planes .planes_section .planes_box {
+    border: 5px solid #2B4D89;
+    border-radius: 10px;
+    background: linear-gradient(#e8f1ff, #ffffff, #e8f1ff );
+    box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.25);
+    display: grid;
+    grid-template-rows: 100px 100px 300px;
+}
+
+.planes_box .titulo {
+    height: 100px;
+}
+
+.planes_box .titulo h1 {
+    padding-top: 5px;
+    color: #2B4D89;
+}
+
+.planes_box .precio {
+    height: 100px;
+    background: linear-gradient(70deg, #2B4D89 50%, #7397CF );
+    box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.25);
+}
+
+.planes_box .precio h1 {
+    margin-top: 20px;
+    margin-bottom: 1px;
+}
+
+.planes_box .precio p {
+    text-align: center;
+    color: #fff;
+    margin-top: 1px;
 }
