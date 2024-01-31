@@ -11,10 +11,13 @@ h1, p {
 
 /* stilos del header  */
 header {
+    width: 1800;
     padding: 0px 50px;
     display: grid;
-    grid-template-columns: 300px auto;
+    grid-template-columns: 600px 900px;
     background: linear-gradient(70deg, #2B4D89 50%, #7397CF );
+    position: fixed;
+    box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.25);
 }
 
 header .logo {
@@ -53,7 +56,7 @@ header .menu ul li a {
 
 /* stilos del hero  */
 .hero {
-    padding: 0px 50px;
+    padding: 70px 50px 0;
     display: grid;
     grid-template-columns: 50% 50%;
     background: linear-gradient(70deg, #2B4D89 50%, #7397CF );
@@ -117,7 +120,7 @@ header .menu ul li a {
 }
 
 .planes {
-    padding: 0px 50px;
+    padding: 70px 50px 0;
     background: linear-gradient(70deg, #2B4D89 50%, #7397CF );
 }
 
@@ -125,17 +128,17 @@ header .menu ul li a {
     text-align: center;
     color: #ffffff;
     font-size: 2em;
-    padding-top: 20px;
+    padding-top: 30px;
 }
 
 .planes .planes_section {
     display: grid;
     grid-template-columns: 250px 280px 250px;
-    grid-template-rows: 600px;
+    grid-template-rows: 500px;
     grid-column-gap: 40px;
     justify-content: center;
     padding-top: 30px;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
 }
 .planes .planes_section .planes_box {
     border: 5px solid #7397CF;
@@ -143,8 +146,8 @@ header .menu ul li a {
     background: linear-gradient(#e8f1ff, #ffffff, #e8f1ff );
     box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.25);
     display: grid;
-    grid-template-rows: 100px 100px 250px 100px;
-    height: 550px;
+    grid-template-rows: 80px 80px 190px 80px;
+    height: 450px;
     margin-top: 25px;
 }
 
@@ -154,37 +157,47 @@ header .menu ul li a {
     background: linear-gradient(#e8f1ff, #ffffff, #e8f1ff );
     box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.25);
     display: grid;
-    grid-template-rows: 100px 100px 250px 100px;
+    grid-template-rows: 80px 80px 190px 80px;
 }
 
 .planes_box .titulo {
-    height: 100px;
+    height: 80px;
 }
 
 .box_principal .titulo {
-    height: 100px;
+    height: 80px;
 }
 
 .planes_box .titulo h1 {
-    padding-top: 30px;
+    padding-top: 20px;
     color: #2B4D89;
 }
 
 .box_principal .titulo h1 {
-    padding-top: 30px;
+    padding-top: 20px;
     color: #2B4D89;
 }
 
 .planes_box .precio {
-    height: 100px;
+    height: 80px;
     background: linear-gradient(70deg, #2B4D89 50%, #7397CF );
     box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.25);
 }
 
 .box_principal .precio {
-    height: 100px;
+    height: 80px;
     background: linear-gradient(70deg, #2B4D89 50%, #7397CF );
     box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.25);
+}
+
+.planes_box .precio h1 {
+    padding-top: 10px;
+    color: #fff;
+}
+
+.box_principal .precio h1 {
+    padding-top: 10px;
+    color: #fff;
 }
 
 .planes_box .precio p {
@@ -199,18 +212,18 @@ header .menu ul li a {
 
 .planes_box .caracteristicas {
     display: grid;
-    grid-template-rows: repeat(6, 50px);
-    grid-column-gap: 40px;
+    grid-template-rows: repeat(6, 40px);
+    grid-column-gap: 20px;
     justify-content: center;
-    padding-top: 10px;
+    padding-top: 20px;
 }
 
 .box_principal .caracteristicas {
     display: grid;
-    grid-template-rows: repeat(6, 55px);
-    grid-column-gap: 40px;
+    grid-template-rows: repeat(6, 45px);
+    grid-column-gap: 20px;
     justify-content: center;
-    padding-top: 10px;
+    padding-top: 20px;
 
 }
 
@@ -218,7 +231,7 @@ header .menu ul li a {
     text-align: center;
     border-bottom: 2px solid #2b4d8970;
     width: 200px;
-    margin: 10px;
+    margin-bottom: 10px;
     color: #2b4d89cd;
 }
 
@@ -226,18 +239,18 @@ header .menu ul li a {
     text-align: center;
     border-bottom: 2px solid #2b4d8970;
     width: 200px;
-    margin: 10px;
+    margin-bottom: 15px;
     color: #2b4d89cd;
 }
 
 .planes_box .button {
     text-align: center;
-    padding-top: 25px;
+    padding-top: 40px;
 }
 
 .box_principal .button {
     text-align: center;
-    padding-top: 55px;
+    padding-top: 70px;
 }
 
 .planes_box .button a{
@@ -266,7 +279,7 @@ header .menu ul li a {
 }
 
 .nosotros {
-    padding: 50px 50px 90px;
+    padding: 80px 50px 90px;
     text-align: center; 
 }
 
@@ -308,7 +321,7 @@ header .menu ul li a {
 }
 
 .contactenos {
-    padding: 0px 50px 50px;
+    padding: 70px 50px 50px;
     text-align: center; 
     display: grid;
     grid-template-columns: 50% 50%;
