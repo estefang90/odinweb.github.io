@@ -1,57 +1,93 @@
 /* stilos del body */
-body {
-    margin: 0px;
-    padding: 0px;
-    font-family: 'Montserrat', sans-serif;
+*{
+    list-style: none;
 }
 
 h1, p {
- margin: 0;
+    margin: 0;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
 }
 
 /* stilos del header  */
-header {
-    width: 1800;
-    padding: 0px 50px;
+#Header {
+    width: 90%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    height: 100px;
+
+    /* padding: 0px 50px;
     display: grid;
-    grid-template-columns: 600px 900px;
+    grid-template-columns: 1fr 2fr;
+    grid-column-gap: 20px;
     background: linear-gradient(70deg, #2B4D89 50%, #7397CF );
     position: fixed;
-    box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.25);
+    box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.25); */
 }
 
-header .logo {
-    display: flex;
-}
-
-header .logo .logo_img {
-    height: 50px;
+.logo {
     padding: 15px;
 }
-
-header .menu {
-    color: #fff;
+.logo .logo_img {
+    height: 50px;
 }
 
-header .menu ul {
-    float: right;
-    list-style-type: none;
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu li {
+    margin: 0 15px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    
+    /* font-size: 15px;
+    text-transform: uppercase;
+    color: #ffffff;
     position: relative;
-    margin-right: 165px;
+    padding: 0 20px; */
 }
 
-header .menu ul li {
-    float: left;
-    position:relative;
-    margin-right: 25px;
-    padding-top: 15px;
-    font-size: 1.1em;
-    font-weight: 500;
-}
-
-header .menu ul li a {
-    text-decoration: none;
+.menu li a{
     color: #fff;
+    text-decoration: none;
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 25px;
+}
+
+label {
+    cursor: pointer;
+    display: none;
+}
+
+.menu #animation {
+    position: absolute;
+    height: 4px;
+    right: 0px;    
+    width: 0px;
+    bottom: 24px;
+    background: #6f97da;
+    border-radius: 8px;
+    transition: all .5s ease 0s;
 }
 
 /* stilos del hero  */
@@ -488,7 +524,39 @@ footer .detalles {
     font-weight: 600;
 }
 
-@media (min-width: 1200px) and (max-width: 1300px) {
+@media (max-width: 991px) {
+    .menu{
+        padding: 30px;
+        margin: 0;
+    }
+
+    label {
+        display: initial;
+    }
+
+    .menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #2B4D89;
+        display: none;
+    }
+
+    .menu li {
+        margin: 0 0 20px 0;
+        width: 100px;
+    }
+
+    .menu #animation {
+        display: none;
+    }
+
+    #menu:checked ~ .menu {
+        display: initial;
+    }
+}
+/* @media (min-width: 1200px) and (max-width: 1300px) {
         
     header .menu ul {
         margin-right: 100px;
@@ -588,4 +656,4 @@ footer .detalles {
         padding-top: 20px;
         height: 350px;
     }
-  }
+  } */

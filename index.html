@@ -7,19 +7,22 @@
     <title>Contaduria Online</title>
 </head>
 <body>
-    <header>
+    <header id="Header">
         <div class="logo">
             <img class="logo_img" src="img/contaduria_logo.png" alt="">
         </div>
-        <nav class="menu">
-            <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#odin">Odin</a></li>
-                <li><a href="#planes">Planes</a></li>
-                <li><a href="#nosotros">Nosotros</a></li>
-                <li><a href="#contactenos">Contactenos</a></li>
-            </ul>
-        </nav>
+        <input type="checkbox" id="menu" />
+        <label for="menu">
+            <img src="img/menu.png" class="menu-icono" alt="">
+        </label>
+        <ul class="menu">
+            <li><div id="animation"></div></li>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#odin">Odin</a></li>
+            <li><a href="#planes">Planes</a></li>
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#contactenos">Contactenos</a></li>
+        </ul>
     </header>
     <section id="inicio" class="hero">
         <div class="text-hero">
@@ -162,5 +165,6 @@
         <p class="copy">Copyright © 2024 Contaduria Online. Todos los Derechos Reservados. - <a href="">Políticas de Privacidad</a></p>
         <p class="dev">Desarrollado por <a href="https://zireconsulting.com/">Zire Consulting Services</a></p>
     </footer>
+    <script src="js/script.js"></script>
 </body>
 </html>
