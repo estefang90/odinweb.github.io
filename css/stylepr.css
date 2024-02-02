@@ -195,7 +195,7 @@ label {
     background: linear-gradient(#e8f1ff, #ffffff, #e8f1ff );
     box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.25);
     height: 500px;
-    width: 250px;
+    width: 360px;
     margin-top: 25px;
     transition: all 400ms ease;
 }
