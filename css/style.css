@@ -729,8 +729,27 @@ footer .dev a {
 
 @media (max-width: 620px) {
 
+    .hero {
+        padding: 70px 25px 0;
+    }
+    
+    .odin {
+        padding: 90px 25px 25px;
+    }
+
     .planes .planes_section {
         grid-template-columns: 1fr;
     }
 
+    .contactenos {
+        padding: 70px 25px 0px;
+    }
+    
+    .nosotros {
+        padding: 100px 24px 50px;
+    }
+
+    form .box_form button {
+        width: 60%;
+    }
 }
