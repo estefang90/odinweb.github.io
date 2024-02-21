@@ -53,12 +53,6 @@ body {
     font-size: 18px;
     font-weight: 600;
     cursor: pointer;
-    
-    /* font-size: 15px;
-    text-transform: uppercase;
-    color: #ffffff;
-    position: relative;
-    padding: 0 20px; */
 }
 
 .menu li a{
@@ -145,21 +139,21 @@ label {
     padding-left: 50px;
 }
 
-.odin .text-odin p {
-    width: 100%;
-    padding: 25px 0 45px 35px;
-    line-height: 1.5;
-    font-size: 1.2em;
+.odin .text-odin h3 {
+    text-align: center;
+    font-size: 1.5em;
 }
 
-.odin .img-odin {
-    margin-left: 50px;
+.odin .text-odin p {
+    width: 100%;
+    line-height: 1.5;
+    font-size: 0.9em;
 }
 
 .odin .img-odin img {
     padding-top: 25px;
-    width: 100%;
-    height: 95%;
+    width: 95%;
+    height: 80%;
     object-fit: cover;
 }
 
