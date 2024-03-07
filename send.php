@@ -1,22 +1,32 @@
 <?php
-$name = $_POST['user_name'];
-$email = $_POST['user_email'];
-$mensaje = $_POST['user_message'];
 
-$header = 'From: ' . $email . " \r\n";
-$header .= "X-Mailer: PHP/"  . phpversion() . " \r\n";
-$header .= "Mine-Version: 1.0 \r\n";
-$header .= "Content-Type: text/plain";
+    // Recoge los datos del formulario
+    $name = $_POST['user_name'];
+    $email = $_POST['user_email'];
+    $mensaje = $_POST['user_message'];
+    
+    // Destinatario del correo electrónico
+    $para = 'estefangz@gmail.com';
+    
+    // Asunto del correo electrónico
+    $asunto = 'Nuevo mensaje de contacto';
+    
+    // Construye el cuerpo del correo
+    $cuerpoMensaje = "Nombre: $name\n";
+    $cuerpoMensaje .= "Email: $email\n";
+    $cuerpoMensaje .= "Mensaje:\n$mensaje";
+    
+    // Cabeceras del correo electrónico
+    $headers = "From: $nombre <$email>" . "\r\n" .
+                 "Reply-To: $email" . "\r\n" .
+                 "X-Mailer: PHP/" . phpversion();
+    
+    // Envía el correo electrónico
+    if (mail($para, $asunto, $cuerpoMensaje, $headers)) {
+        header("Location: index.html");
+    } else {
+        echo 'Error al enviar el mensaje.';
+    }
 
-$message = "Este mensaje fue enviado por: " . $name . " \r\n"; 
-$message .= "Su email es: " . $email . " \r\n"; 
-$message = "Mensaje: " . $mensaje . " \r\n"; 
-$message = "Enviado el: " . date('d/m/Y', time());
-
-$para = 'estefangz@gmail.com';
-$asunto = 'prueba';
-
-mail($para, $asunto, $message, $header);
- 
-header("Location: index.html")
+//
 ?>

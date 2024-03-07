@@ -198,7 +198,7 @@ label {
 
 .planes_box .box_titulo {
     text-align: center;
-    margin: 20px 0;
+    margin: 10px 0;
     color: #2B4D89;
     font-size: 2em;
 }
@@ -233,7 +233,7 @@ label {
     text-align: left;
     width: 250px;
     padding: 5px 0;
-    font-size: 0.7em;
+    
 }
 
 .text-det-car {
@@ -242,23 +242,28 @@ label {
 
 .text-act-car {
     color: #2b4d89cd;
+    font-size: 0.7em;
 }
 
-.planes_box .caracteristicas .text-det{
-    text-align: left;
-    width: 250px;
-    padding: 5px 0;
+.text-imp-car {
     color: #2b4d89cd;
-    font-size: 0.7em;
+    font-weight: 600;
+    font-size: 0.75em;
+}
+
+.text-imp-car .star{
+    color: #ffd500cd;
+    font-size: 1.2em;
 }
 
 .text-des-car {
     text-decoration:line-through;
     color: #a2aab7cd;
+    font-size: 0.7em;
 }
 
 .planes_box .button {
-    padding-top: 15px;
+    padding-top: 5px;
     text-align: center;
 }
 
