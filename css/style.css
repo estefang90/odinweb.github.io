@@ -14,6 +14,24 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+[data-animation="fade"] {
+    opacity: 0;
+    transform: translate(100%);
+    transition: -6s ease-in .3s;
+
+    --opacity: 1;
+    --transform: translate(0);
+}
+
+.unset {
+    opacity: var(--opacity);
+    transform: var(--transform);
+}
+
+.img__anime{
+    background-color: #000;
+}
+
 /* stilos del header  */
 #Header {
     width: 90%;
