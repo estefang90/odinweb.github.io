@@ -1,5 +1,5 @@
 <?php
-
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Recoge los datos del formulario
     $name = $_POST['user_name'];
     $email = $_POST['user_email'];
@@ -22,11 +22,10 @@
                  "X-Mailer: PHP/" . phpversion();
     
     // Envía el correo electrónico
-    if (mail($para, $asunto, $cuerpoMensaje, $headers)) {
-        header("Location: index.html");
-    } else {
-        echo 'Error al enviar el mensaje.';
+    mail($para, $asunto, $cuerpoMensaje, $headers);
+    
+    header("Location: index.html");
+    exit();
     }
-
 //
 ?>
