@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/static/css/main.b2d206c6.css",
+    "main.js": "/static/js/main.1e9a1694.js",
+    "static/js/453.7ceb20e9.chunk.js": "/static/js/453.7ceb20e9.chunk.js",
+    "static/media/mujer-contabilidad.png": "/static/media/mujer-contabilidad.ef6e5af00870d68d86f3.png",
+    "static/media/computadora-hero.png": "/static/media/computadora-hero.4ffb741fd040fb668aec.png",
+    "static/media/nosotros.jpg": "/static/media/nosotros.c9c8fb26cf3c00acfec7.jpg",
+    "static/media/odin_logo_color.png": "/static/media/odin_logo_color.02b3dca621f6c8742f17.png",
+    "static/media/odin_logo.png": "/static/media/odin_logo.b0e8a08b5c4ff75032cb.png",
+    "static/media/contaduria_logo_color.png": "/static/media/contaduria_logo_color.e96591c86bbfb3282d1c.png",
+    "index.html": "/index.html",
+    "main.b2d206c6.css.map": "/static/css/main.b2d206c6.css.map",
+    "main.1e9a1694.js.map": "/static/js/main.1e9a1694.js.map",
+    "453.7ceb20e9.chunk.js.map": "/static/js/453.7ceb20e9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b2d206c6.css",
+    "static/js/main.1e9a1694.js"
+  ]
+}
